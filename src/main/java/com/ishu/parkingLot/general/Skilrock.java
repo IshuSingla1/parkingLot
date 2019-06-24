@@ -4,7 +4,7 @@ public class Skilrock extends Company{
 	
 	private final int totalParkingSpace = 150;
 	
-	private volatile int parkingSpace = 150;
+	private volatile int parkingSpace = totalParkingSpace;
 
 	@Override
 	protected int getCurrentSize() {

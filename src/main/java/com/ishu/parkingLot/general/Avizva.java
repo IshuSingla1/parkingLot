@@ -13,7 +13,7 @@ public class Avizva extends Company{
 
 	@Override
 	protected boolean isFull() {
-		if(parkingSpace == totalParkingSpace)
+		if(parkingSpace == 0)
 			return true;
 		else
 			return false;
@@ -21,7 +21,7 @@ public class Avizva extends Company{
 
 	@Override
 	protected boolean isEmpty() {
-		if(parkingSpace == 0)
+		if(parkingSpace == totalParkingSpace)
 			return true;
 		else
 			return false;
